@@ -27,4 +27,11 @@ public class FindMaximumTest {
         Assert.assertSame(3,maximum);
     }
 
+    //TC1.3
+    @Test
+    public void givenThreeIntegers_KeepMaxInputAtThirdPosition_ShouldReturnMaximum() {
+        Integer maximum = findMaximum.getMaximum(1, 2, 3);
+        Assert.assertSame(3,maximum);
+    }
+
 }
