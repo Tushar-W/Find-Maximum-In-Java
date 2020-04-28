@@ -55,4 +55,11 @@ public class FindMaximumTest {
         Assert.assertEquals(1.3,maximum,0.1);
     }
 
+    //TC3.1
+    @Test
+    public void givenThreeString_KeepMaxInputAtFirstPosition_ShouldReturnMaximum() {
+        String maximum = findMaximum.getMaximum("Peach","Apple","Banana");
+        Assert.assertSame("Peach",maximum);
+    }
+
 }
