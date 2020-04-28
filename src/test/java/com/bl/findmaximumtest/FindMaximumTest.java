@@ -69,4 +69,11 @@ public class FindMaximumTest {
         Assert.assertSame("Peach",maximum);
     }
 
+    //TC3.3
+    @Test
+    public void givenThreeString_KeepMaxStringAtThirdPosition_ShouldReturnMaximum() {
+        String maximum = findMaximum.getMaximum("Apple","Banana","Peach");
+        Assert.assertSame("Peach",maximum);
+    }
+
 }
