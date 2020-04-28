@@ -20,4 +20,11 @@ public class FindMaximumTest {
         Assert.assertSame(3,maximum);
     }
 
+    //TC1.2
+    @Test
+    public void givenThreeIntegers_KeepMaxInputAtSecondPosition_ShouldReturnMaximum() {
+        Integer maximum = findMaximum.getMaximum(1, 3, 2);
+        Assert.assertSame(3,maximum);
+    }
+
 }
