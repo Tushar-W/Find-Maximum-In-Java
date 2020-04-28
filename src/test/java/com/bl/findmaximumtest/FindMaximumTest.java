@@ -48,4 +48,11 @@ public class FindMaximumTest {
         Assert.assertEquals(1.3,maximum,0.1);
     }
 
+    //TC2.3
+    @Test
+    public void givenThreeFloats_KeepMaxInputAtThirdPosition_ShouldReturnMaximum() {
+        Float maximum = findMaximum.getMaximum(1.1f, 1.2f, 1.3f);
+        Assert.assertEquals(1.3,maximum,0.1);
+    }
+
 }
