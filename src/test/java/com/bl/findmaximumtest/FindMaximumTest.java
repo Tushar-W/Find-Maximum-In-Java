@@ -76,4 +76,11 @@ public class FindMaximumTest {
         Assert.assertSame("Peach",maximum);
     }
 
+    //RF2
+    @Test
+    public void givenThreeGenericType_ShouldReturnMaximum() {
+        findMaximum = new FindMaximum<Integer,Float,String>(new Integer[]{1,2,3},new Float[]{1.1f,1.2f,1.3f},new String[]{"Apple","Peach","Banana"});
+        findMaximum.getMaximum();
+    }
+
 }
